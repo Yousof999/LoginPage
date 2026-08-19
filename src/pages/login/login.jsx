@@ -7,10 +7,10 @@ function Login() {
   const [password, setPassword] = useState('')
   const [remember, setRemember] = useState(false)
   const navigate = useNavigate()
-  const signupEmail = localStorage.getItem("emails").replace(/[""]+/g, '')
-  const signupPassword = localStorage.getItem("passwords").replace(/[""]+/g, '')
+  const signupEmail = localStorage.getItem("emails")
+  const signupPassword = localStorage.getItem("passwords")
   function handleSubmit() {
-    if(signupEmail == email && signupPassword == password) {
+    if(signupEmail == `"${email}"`  && signupPassword == `"${password}"`) {
       navigate("/")
     } else {
       alert("Email or password is wrong")
