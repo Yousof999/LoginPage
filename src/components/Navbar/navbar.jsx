@@ -26,7 +26,7 @@ export default function NavBar() {
     return(
         <nav className="navbar">
             <div className="container">
-                <Link to='/home' className="navbar-brand">
+                <Link to='/' className="navbar-brand">
                     <span className="brand-mark" aria-hidden="true">食</span>
                     <span>Flavor<span className="brand-accent">Find</span></span>
                 </Link>
@@ -62,7 +62,7 @@ export default function NavBar() {
 
                 </div>
                 <div className="icons d-flex gap-4">
-                    <Link to='/' className="login" aria-label="Log in"><i className="fa-solid fa-circle-user"></i></Link>
+                    <Link to='/login' className="login" aria-label="Log in"><i className="fa-solid fa-circle-user"></i></Link>
                 </div>
             </div>
         </nav>

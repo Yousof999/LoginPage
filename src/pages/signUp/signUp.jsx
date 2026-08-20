@@ -16,7 +16,7 @@ function SignUp() {
       return
     }
 
-    navigate('/home')
+    navigate('/')
     localStorage.clear()
     localStorage.setItem("emails", JSON.stringify(email))
     localStorage.setItem("passwords", JSON.stringify(password))
