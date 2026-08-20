@@ -11,7 +11,7 @@ function Login() {
   const signupPassword = localStorage.getItem("passwords")
   function handleSubmit() {
     if(signupEmail == `"${email}"`  && signupPassword == `"${password}"`) {
-      navigate("/")
+      navigate("/home")
     } else {
       alert("Email or password is wrong")
     }
