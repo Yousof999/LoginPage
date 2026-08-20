@@ -89,7 +89,7 @@ function SignUp() {
           <button type="submit" className="btn btn-primary w-100">Create account</button>
 
           <div className="text-center mt-4 text-muted small">
-            Already have an account? <Link to="/">Log in</Link>
+            Already have an account? <Link to="/login">Log in</Link>
           </div>
         </form>
       </div>
